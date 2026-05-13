@@ -1,6 +1,0 @@
-.box {
-    border: 1px solid transparent;
-    background:
-        linear-gradient(var(--box-color), var(--box-color)) padding-box,
-        var(--gradient-primary) border-box;
-}

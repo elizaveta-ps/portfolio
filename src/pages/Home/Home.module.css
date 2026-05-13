@@ -52,12 +52,23 @@
   border-radius: 50%;
 }
 
+.about {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--box-color), var(--box-color)) padding-box,
+    var(--gradient-primary) border-box;
+}
+
 .desktop {
   display: block;
 }
 
 .mobile {
   display: none;
+}
+
+.muted {
+  color: var(--text-muted);
 }
 
 @media (max-width: 1024px) {
