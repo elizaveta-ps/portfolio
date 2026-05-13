@@ -1,0 +1,52 @@
+.avatar {
+    position: relative;
+    width: 65%;
+}
+
+.avatar img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+.role div:nth-child(1) {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.role div:nth-child(2) {
+    font-size: 32px;
+    color: var(--color-secondary);
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.role div:nth-child(3) {
+    color: var(--text-muted);
+    line-height: 100%;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        margin-bottom: 40px;
+    }
+
+    .avatar {
+        margin: 0 auto;
+    }
+
+    .role {
+        text-align: center;
+    }
+}

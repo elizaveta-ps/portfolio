@@ -1,0 +1,77 @@
+.link {
+    position: relative;
+    width: 100%;
+    padding: 1px;
+    border-radius: 100px;
+    overflow: hidden;
+    
+    font-size: var(--font-size-m);
+    line-height: 24px;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    z-index: 0;
+
+    background: var(--border-primary);
+    transition: all var(--transition);
+}
+
+.link:hover::before {
+    background: var(--border-secondary);
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 6px 8px 6px 16px;
+    background-color: var(--tag-color);
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.content div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content span {
+    white-space: nowrap;
+    color: var(--text-muted);
+    font-size: var(--font-size-s);
+    opacity: 0.6;
+}
+
+.link svg {
+    flex-shrink: 0;
+    stroke: var(--border-primary);
+    margin-left: auto;
+    transition: stroke var(--transition);
+}
+
+.link:hover svg {
+    stroke: var(--text-primary);
+}
+
+.primary::before {
+    opacity: 0.5;
+    background: var(--gradient-primary) !important;
+}
+
+.primary:hover::before {
+    opacity: 1;
+}
+
+.primary:hover svg {
+    stroke: var(--color-primary);
+}

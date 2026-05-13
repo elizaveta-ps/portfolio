@@ -1,0 +1,105 @@
+:root {
+  --bg-color: #101117;
+  --box-color: #181a23;
+  --tag-color: #14161e;
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #FCFCFC;
+  --text-muted: #A3A1A8;
+
+  --color-primary: #64a0fe;
+  --color-secondary: #eaff4a;
+  
+  --gradient-primary: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+
+  --border-primary: #363741;
+  --border-secondary: #676876;
+
+  --font-primary: 'Tektur', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --font-size-s: 13px;
+  --font-size-m: 14px;
+  --font-size-l: 16px;
+
+  --transition: 0.15s linear;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  min-height: 100%;
+  color: var(--text-primary);
+  background: var(--bg-color);
+  font-family: var(--font-secondary);
+  background-image: url('/pattern_dark.png');
+
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  line-height: 24px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+p {
+  margin: 12px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+}

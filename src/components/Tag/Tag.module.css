@@ -1,0 +1,19 @@
+.container {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 8px;
+
+    background-color: var(--tag-color);
+    padding: 6px 16px;
+    border-radius: 100px;
+    border: 1px solid var(--border-primary);
+
+    font-size: var(--font-size-m);
+    line-height: 24px;
+}
+
+.container img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}

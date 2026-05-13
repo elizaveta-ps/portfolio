@@ -1,0 +1,15 @@
+.role {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.name {
+    font-size: var(--font-size-l);
+    font-weight: 500;
+}
+
+.muted {
+    color: var(--text-muted);
+    font-size: var(--font-size-s);
+}
