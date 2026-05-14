@@ -1,5 +1,5 @@
 import { ParallaxStars } from '@/components/ParallaxStars/ParallaxStars';
-import { basePath } from '../../../config/basePath';
+import { basePath } from '@/helpers/basePath';
 import styles from './Hero.module.css';
 
 export const Hero = () => (

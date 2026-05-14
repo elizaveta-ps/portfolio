@@ -11,7 +11,7 @@ import { Hero } from '@/components/Hero/Hero';
 import { Contacts } from '@/components/Contacts/Contacts';
 import { Experience } from '@/components/Experience/Experience';
 import { Cta } from '@/components/Cta/Cta';
-import { basePath } from '../../../config/basePath';
+import { basePath } from '@/helpers/basePath';
 import styles from './Home.module.css';
 
 export default function Home() {

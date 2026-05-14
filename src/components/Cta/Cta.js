@@ -1,7 +1,7 @@
 import { MouseParallaxContainer } from 'react-parallax-mouse';
 import { ParallaxStars } from '@/components/ParallaxStars/ParallaxStars';
 import { ButtonLink } from '@/components/ButtonLink/ButtonLink';
-import { basePath } from '../../../config/basePath';
+import { basePath } from '@/helpers/basePath';
 import styles from './Cta.module.css';
 
 export const Cta = () => (

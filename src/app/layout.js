@@ -1,5 +1,5 @@
 import { Roboto, Tektur } from 'next/font/google';
-import { basePath } from '../../config/basePath';
+import { basePath } from '@/helpers/basePath';
 import './globals.css';
 
 const tektur = Tektur({
