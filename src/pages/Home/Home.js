@@ -11,6 +11,7 @@ import { Hero } from '@/components/Hero/Hero';
 import { Contacts } from '@/components/Contacts/Contacts';
 import { Experience } from '@/components/Experience/Experience';
 import { Cta } from '@/components/Cta/Cta';
+import { basePath } from '../../../config/basePath';
 import styles from './Home.module.css';
 
 export default function Home() {
@@ -93,30 +94,30 @@ export default function Home() {
                                     </div>
                                 </Box>
                                 <Box title="Навыки">
-                                    <Tag img="logo-playwright.svg">PlayWright</Tag>
-                                    <Tag img="">Java Script</Tag>
-                                    <Tag img="">HTML</Tag>
-                                    <Tag img="">CSS</Tag>
-                                    <Tag img="">HTTP</Tag>
-                                    <Tag img="">REST API</Tag>
-                                    <Tag img="">SQL</Tag>
-                                    <Tag img="">Функциональное тестирование</Tag>
-                                    <Tag img="">API-тестирование</Tag>
-                                    <Tag img="">Автоматизированное тестирование</Tag>
-                                    <Tag img="">Тест-кейс</Tag>
-                                    <Tag img="">Баг-репорт</Tag>
+                                    <Tag img={`${basePath}/icons/logo-playwright.svg`}>PlayWright</Tag>
+                                    <Tag>Java Script</Tag>
+                                    <Tag>HTML</Tag>
+                                    <Tag>CSS</Tag>
+                                    <Tag>HTTP</Tag>
+                                    <Tag>REST API</Tag>
+                                    <Tag>SQL</Tag>
+                                    <Tag>Функциональное тестирование</Tag>
+                                    <Tag>API-тестирование</Tag>
+                                    <Tag>Автоматизированное тестирование</Tag>
+                                    <Tag>Тест-кейс</Tag>
+                                    <Tag>Баг-репорт</Tag>
                                 </Box>
                                 <Box title="Инструменты">
-                                    <Tag img="logo-postman.svg">Postman</Tag>
+                                    <Tag img={`${basePath}/icons/logo-postman.svg`}>Postman</Tag>
                                     <Tag>DevTools</Tag>
                                     <Tag>Kibana</Tag>
                                     <Tag>Sentry</Tag>
                                     <Tag>Charles</Tag>
-                                    <Tag img="logo-figma.svg">Figma</Tag>
+                                    <Tag img={`${basePath}/icons/logo-figma.svg`}>Figma</Tag>
                                     <Tag>Git</Tag>
                                     <Tag>VS Code</Tag>
                                     <Tag>Jira</Tag>
-                                    <Tag img="logo-docker.svg">Docker</Tag>
+                                    <Tag img={`${basePath}/icons/logo-docker.svg`}>Docker</Tag>
                                 </Box>
                                 <Experience />
                             </div>

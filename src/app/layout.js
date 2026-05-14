@@ -1,4 +1,5 @@
 import { Roboto, Tektur } from 'next/font/google';
+import { basePath } from '../../config/basePath';
 import './globals.css';
 
 const tektur = Tektur({
@@ -19,7 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${tektur.variable} ${roboto.variable}`}>
-      <body>{children}</body>
+      <body style={{backgroundImage: `url('${basePath}/pattern_dark.png')`}}>
+        {children}
+      </body>
     </html>
   );
 }

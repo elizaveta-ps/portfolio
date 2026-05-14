@@ -39,7 +39,6 @@ body {
   color: var(--text-primary);
   background: var(--bg-color);
   font-family: var(--font-secondary);
-  background-image: url('/pattern_dark.png');
 
   font-size: var(--font-size-m);
   font-weight: 400;

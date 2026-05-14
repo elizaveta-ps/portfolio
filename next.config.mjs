@@ -1,9 +1,11 @@
+import { basePath } from './config/basePath.js';
+
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
     output: 'export',
-    basePath: '/portfolio',
-    assetPrefix: '/portfolio/',
+    basePath,
+    assetPrefix: `${basePath}/`,
     trailingSlash: true,
 };
 

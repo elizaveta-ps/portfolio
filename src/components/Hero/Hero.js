@@ -1,11 +1,11 @@
-import { MouseParallaxContainer } from 'react-parallax-mouse';
 import { ParallaxStars } from '@/components/ParallaxStars/ParallaxStars';
+import { basePath } from '../../../config/basePath';
 import styles from './Hero.module.css';
 
 export const Hero = () => (
     <div className={styles.wrapper}>
         <div className={styles.avatar}>
-            <img src="/avatar.jpg" />
+            <img src={`${basePath}/avatar.jpg`} />
             <ParallaxStars />
         </div>
         <div className={styles.role}>
