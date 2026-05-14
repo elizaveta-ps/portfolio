@@ -53,12 +53,14 @@ export default function Home() {
                                 <Box title="Ссылки">
                                     <TagLink variant="primary" title="Github" href="https://github.com/elizaveta-ps" />
                                 </Box>
-                                <Box title="Языки" className={styles.desktop}>
-                                    <div>
-                                        <p>Русский<span className={styles.muted}> — Родной</span></p>
-                                        <p>Английский<span className={styles.muted}> — B1</span></p>
-                                    </div>
-                                </Box>
+                                <div className={styles.desktop}>
+                                    <Box title="Языки">
+                                        <div>
+                                            <p>Русский<span className={styles.muted}> — Родной</span></p>
+                                            <p>Английский<span className={styles.muted}> — B1</span></p>
+                                        </div>
+                                    </Box>
+                                </div>
                                 <Box title="Курсы">
                                     <TagLink 
                                         title="Инженер по тестированию" 
