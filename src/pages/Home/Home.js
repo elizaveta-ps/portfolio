@@ -55,9 +55,10 @@ export default function Home() {
                                 </Box>
                                 <div className={styles.desktop}>
                                     <Box title="Языки">
-                                        <div>
-                                            <p>Русский<span className={styles.muted}> — Родной</span></p>
-                                            <p>Английский<span className={styles.muted}> — B1</span></p>
+                                        <div className={styles.lang}>
+                                            <div>Русский<span className={styles.muted}> — Родной</span></div>
+                                            <div>Английский<span className={styles.muted}> — B1</span></div>
+                                            <div>Польский<span className={styles.muted}> — B1</span></div>
                                         </div>
                                     </Box>
                                 </div>

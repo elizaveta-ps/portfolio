@@ -71,6 +71,12 @@
   color: var(--text-muted);
 }
 
+.lang {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
 @media (max-width: 1024px) {
   .col:nth-child(1) {
     width: 40%;
